@@ -44,9 +44,10 @@ Tray::Tray::Tray(std::string identifier, Icon icon) : BaseTray(std::move(identif
     memset(&notifyData, 0, sizeof(NOTIFYICONDATA));
     notifyData.cbSize = sizeof(NOTIFYICONDATA);
     notifyData.hWnd = hwnd;
-    notifyData.uFlags = NIF_ICON | NIF_MESSAGE;
+    notifyData.uFlags = NIF_ICON | NIF_MESSAGE | NIF_TIP;
     notifyData.uCallbackMessage = WM_TRAY;
     notifyData.hIcon = this->icon;
+    strcpy(notifyData.szTip, this->identifier.c_str());
 
     if (Shell_NotifyIcon(NIM_ADD, &notifyData) == FALSE)
     {
