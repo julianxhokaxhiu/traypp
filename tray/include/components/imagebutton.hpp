@@ -1,6 +1,6 @@
 #pragma once
 #include "button.hpp"
-#include <core/image.hpp>
+#include "../core/image.hpp"
 
 namespace Tray
 {

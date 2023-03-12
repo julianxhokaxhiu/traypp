@@ -1,5 +1,5 @@
 #pragma once
-#include <core/entry.hpp>
+#include "../core/entry.hpp"
 #include <functional>
 
 namespace Tray

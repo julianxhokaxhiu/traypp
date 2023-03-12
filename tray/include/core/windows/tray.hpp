@@ -1,7 +1,7 @@
 #pragma once
 #if defined(_WIN32)
 #include <Windows.h>
-#include <core/traybase.hpp>
+#include "../traybase.hpp"
 #include <map>
 #include <shellapi.h>
 

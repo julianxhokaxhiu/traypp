@@ -1,6 +1,6 @@
 #pragma once
-#include <core/entry.hpp>
-#include <core/traybase.hpp>
+#include "../core/entry.hpp"
+#include "../core/traybase.hpp"
 #include <memory>
 #include <type_traits>
 #include <vector>
